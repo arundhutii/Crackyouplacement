@@ -1,19 +1,20 @@
 class Solution(object):
-    def merge(self, intervals):
+    def productExceptSelf(self, nums):
         """
-        :type intervals: List[List[int]]
-        :rtype: List[List[int]]
+        :type nums: List[int]
+        :rtype: List[int]
         """
-        intervals.sort(key=lambda interval: interval[0])
-        merged = []
+        l_mult= 1
+        r_mult= 1
+        n= len(nums)
+        l_arr= [0]*n
+        r_arr=[0]*n
 
-        for interval in intervals:
-            if not merged or merged[-1][1] < interval[0]:
-                merged.append(interval)
-            else:
-                merged[-1] = [merged[-1][0], max(merged[-1][1], interval[1])]
-        
-        return merged
-        # Time: O(n log n)
-        # Space: O(n)
-        
+        for i in range(n):
+            j= -i-1
+            l_arr[i]=l_mult
+            r_arr[j]=r_mult
+            l_mult *= nums[i]
+            r_mult *= nums[j]
+
+        return [l*r for l,r in zip(l_arr, r_arr)]
