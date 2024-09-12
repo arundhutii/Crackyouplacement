@@ -18,9 +18,3 @@ class Solution:
         else:
             num = l + n // digit            # Find the exact number
             return int(str(num)[n % digit - 1]) # Find the specific digit
-
-# Example usage
-solution = Solution()
-
-print(solution.findNthDigit(11))  # Output: 0 (the 11th digit is '0' from the number 10)
-  
