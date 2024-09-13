@@ -1,17 +1,15 @@
 class Solution:
-    def averageValue(self, nums):
-        avg=0 
+    def averageValue(self, nums): 
         count= 0
         sums= 0
         for i in nums:
-            if i % 2 ==0 and i % 3 == 0:
+            if i % 6== 0:
                 sums = sums+i
                 count+=1
-            if count==0:
-                avg=0
-            else:
-               avg= sums/count
-            result= int(avg)
+        if count==0:
+            result=0
+        else:
+            result= sums//count
         return result
 
 
