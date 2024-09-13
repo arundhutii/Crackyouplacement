@@ -1,3 +1,4 @@
+#method 2
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         """
