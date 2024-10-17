@@ -10,7 +10,7 @@ class Solution:
         if c > 0: heapq.heappush(maxheap, (-c, 'c'))
         while maxheap:
             count, char = heapq.heappop(maxheap)
-            n = len(res)
+            n = len(res) 
             if n >= 2 and res[-1] == char and res[-2] == char:
                 if not maxheap:
                     break
