@@ -5,3 +5,4 @@ class Solution:
             if i+nums[i] >= end:
                 end = i
         return end == 0
+ 
