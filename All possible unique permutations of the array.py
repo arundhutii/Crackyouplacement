@@ -14,5 +14,5 @@ ob= Solution()
 res= ob.uniquePerms(arr,n)
 for i in range(len(res)):
   for j in range(n):
-    print(res[i][j],end=" ")
+    print(res[i][j],end=" ") 
   print()
