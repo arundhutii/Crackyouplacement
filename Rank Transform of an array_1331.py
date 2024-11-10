@@ -1,8 +1,8 @@
 class Solution:
     def arrayRankTransform(self, arr: List[int]) -> List[int]:
-        ranked = {num: rank for rank, num in enumerate(sorted(set(arr)), start=1)}
+        rank = {num: i for i, num in enumerate(sorted(set(arr)), start=1)}
         
-        return [ranked[num] for num in arr]
+        return [rank[num] for num in arr]
 
 
 
