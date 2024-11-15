@@ -4,7 +4,3 @@ class Solution:
             if sentence[i] == " " and sentence[i-1] != sentence[i+1]:
                 return False
         return sentence[0] ==sentence[-1]
-        
-
-
-        
