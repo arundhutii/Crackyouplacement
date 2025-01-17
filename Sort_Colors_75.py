@@ -3,7 +3,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        start, mid, end = 0, 0, len(nums) - 1
+        start, mid, end = 0, 0, len(nums) - 1 
         while mid <= end:
             if nums[mid] == 0:  # Case for 0
                 self.swap(nums, start, mid)
