@@ -13,4 +13,3 @@ class Solution:
                 max_prof= profit
                 
         return max_prof
- 
