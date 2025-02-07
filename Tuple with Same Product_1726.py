@@ -10,4 +10,3 @@ class Solution:
                 count[prod] += 1
 
         return ans
-            
