@@ -4,7 +4,7 @@ class Solution:
         prevNum = 0
         currNum = 0
         op = '+'
-
+ 
         for i, c in enumerate(s):
             if c.isdigit():
                 currNum = currNum * 10 + int(c)
