@@ -12,3 +12,4 @@ class Solution:
                     cur_or |= nums[i]
             res += 1 if cur_or == max_or else 0
         return res
+ 
